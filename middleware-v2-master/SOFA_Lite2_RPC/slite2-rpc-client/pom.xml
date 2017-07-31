@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.alipay.boot</groupId>
+        <artifactId>slite2-dependencies</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <groupId>com.alipay.APPNAME</groupId>
+    <artifactId>APPNAME-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>APPNAME</name>
+    <url>http://maven.apache.org</url>
+
+    <modules>
+        <module>app/endpoint</module>
+        <module>app/web</module>
+    </modules>
+
+    <properties>
+        <java.version>1.7</java.version>
+        <serverone.facade.version>1.0.0</serverone.facade.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- sub modules -->
+            <dependency>
+                <groupId>com.alipay.APPNAME</groupId>
+                <artifactId>APPNAME-endpoint</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alipay.APPNAME</groupId>
+                <artifactId>APPNAME-web</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- rpc facade dependency -->
+            <dependency>
+                <groupId>com.alipay.APPNAME</groupId>
+                <artifactId>APPNAME-facade</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+                <version>3.5.1</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <includes>
+                        <include>**/*Tests.java</include>
+                        <include>**/*Test.java</include>
+                    </includes>
+                    <excludes>
+                        <exclude>**/Abstract*.java</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:sofa="http://schema.alipay.com/sofa/schema/slite"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://schema.alipay.com/sofa/schema/slite   http://schema.alipay.com/sofa/slite.xsd"
+       default-autowire="byName">
+
+    <!-- 增加一个 rest filter 主要保证,spring mvc 的8080 端口也能访问到8341 端口,即跨域访问-->
+    <bean id="commonContainerResponseFilter" class="com.alipay.APPNAME.endpoint.filter.CommonContainerResponseFilter">
+        <property name="allowedOrigins">
+            <set>
+                <!-- 发布线上时:要把域名配置为线上发布的域名,保证只有配置的域名才允许访问这台机器 -->
+                <value>http://localhost:8080</value>
+                <value>http://localhost:8341</value>
+                <!-- 这里大家需要注意:这个在使用chrome浏览器的插件postman插件测试后端数据时,需要加上这条保证能够postman正确提交数据-->
+                <value>chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop</value>
+            </set>
+        </property>
+    </bean>
+
+    <!-- sofa rest 资源,用于响应 rest 请求 -->
+    <bean id="sampleRestFacadeRest" class="com.alipay.APPNAME.endpoint.impl.SampleRestFacadeRestImpl"/>
+</beans>

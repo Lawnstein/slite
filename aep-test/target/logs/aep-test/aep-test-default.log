@@ -1,0 +1,11 @@
+2017-07-29 14:31:17.944 [main] INFO  com.alipay.sofa.common.log - Sofa-Middleware-Log SLF4J : Actual logging.path is [ ./logs ]
+2017-07-29 14:31:17.960 [main] INFO  com.alipay.sofa.common.log - Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.sofa.rpc Logback ]
+2017-07-29 14:31:18.444 [main] INFO  com.csii.aep.Slite2SpringBootApplication - Starting Slite2SpringBootApplication v1.0-SNAPSHOT on CSII-PC with PID 8948 (D:\Java\workspace_slite\aep-test\target\aep-test-service-1.0-SNAPSHOT-executable.jar started by CSII in D:\Java\workspace_slite\aep-test\target)
+2017-07-29 14:31:18.444 [main] INFO  com.csii.aep.Slite2SpringBootApplication - No active profile set, falling back to default profiles: default
+2017-07-29 14:31:18.506 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@87d5bd: startup date [Sat Jul 29 14:31:18 CST 2017]; root of context hierarchy
+2017-07-29 14:31:19.021 [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [jar:file:/D:/Java/workspace_slite/aep-test/target/aep-test-service-1.0-SNAPSHOT-executable.jar!/META-INF/aep-test/aep-test-service.xml]
+2017-07-29 14:31:19.302 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-07-29 14:31:19.785 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-07-29 14:31:20.659 [main] INFO  com.alipay.sofa.common.log - Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.boot.rpc Logback ]
+2017-07-29 14:31:20.893 [main] INFO  com.csii.aep.Slite2SpringBootApplication - Started Slite2SpringBootApplication in 3.526 seconds (JVM running for 3.9)
+2017-07-29 14:31:23.482 [worker-2-thread-2] INFO  com.alipay.sofa.common.log - Sofa-Middleware-Log SLF4J : Actual binding is of type [ com.alipay.sofa.dsr Logback ]
