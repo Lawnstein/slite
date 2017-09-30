@@ -1,7 +1,0 @@
-2017-07-29 14:31:17,991 INFO  main                             - sofa rpc run.mode = DEV
-2017-07-29 14:31:17,991 INFO  main                             - PID:8948 sofa rpc starting!
-2017-07-29 14:31:20,659 INFO  main                             - TR Provider Server is Started!
-2017-07-29 14:31:20,659 INFO  main                             - SOFARouter closed, you can config rpc.sofarouter = true in application.properties to open it
-2017-07-29 14:31:20,659 INFO  main                             - RPC Transmit closed, you can config rpc.transmit = true in application.properties to open it
-2017-07-29 14:31:20,659 INFO  main                             -  <<Publish Service [tr] Begins - com.csii.aep.facade.SampleService
-2017-07-29 14:31:20,877 INFO  main                             -  <<Publish Service [tr] Ends - com.csii.aep.facade.SampleService

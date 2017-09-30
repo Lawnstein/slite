@@ -1,6 +1,0 @@
-core-project
-mvn archetype:generate -DarchetypeRepository=http://mvn.cloud.alipay.com/nexus/content/repositories/snapshots/ -DarchetypeGroupId=com.alipay.sofa -DarchetypeArtifactId=slite2-core-archetype -DarchetypeVersion=1.0-SNAPSHOT
-
-web-project
-mvn archetype:generate -DarchetypeRepository=http://mvn.cloud.alipay.com/nexus/content/repositories/snapshots/ -DarchetypeGroupId=com.alipay.sofa -DarchetypeArtifactId=slite2-web-archetype -DarchetypeVersion=1.0-SNAPSHOT
-

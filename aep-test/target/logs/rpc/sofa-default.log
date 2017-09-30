@@ -1,2 +1,0 @@
-2017-07-29 14:31:20,846 INFO  main                             com.alipay.sofa.rpc.registry.confreg.ConfregRpcRegistry - RPC 服务[com.csii.aep.facade.SampleService:1.0@DEFAULT]发布开始
-2017-07-29 14:31:20,877 INFO  main                             com.alipay.sofa.rpc.registry.confreg.ConfregRpcRegistry - RPC 服务[com.csii.aep.facade.SampleService:1.0@DEFAULT]发布结束

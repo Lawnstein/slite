@@ -1,6 +1,0 @@
-2017-07-29 14:31:23,514 ERROR worker-2-thread-2                - [Internal] query proxyServer address exception£¬from httpUrl=http://confreg-pool:9603?com.alipay.ldc.zone=null&version=4.2.0
-2017-07-29 14:31:24,777 ERROR worker-2-thread-2                - [Internal] query proxyServer address exception£¬from httpUrl=http://confreg.sit.alipay.net:9603?com.alipay.ldc.zone=null&version=4.2.0
-2017-07-29 14:31:29,802 ERROR worker-2-thread-2                - [Internal] query proxyServer address exception£¬from httpUrl=http://confreg-pool:9603?com.alipay.ldc.zone=null&version=4.2.0
-2017-07-29 14:31:30,816 ERROR worker-2-thread-2                - [Internal] query proxyServer address exception£¬from httpUrl=http://confreg.sit.alipay.net:9603?com.alipay.ldc.zone=null&version=4.2.0
-2017-07-29 14:31:38,431 ERROR worker-2-thread-2                - [Internal] query proxyServer address exception£¬from httpUrl=http://confreg-pool:9603?com.alipay.ldc.zone=null&version=4.2.0
-2017-07-29 14:31:39,445 ERROR worker-2-thread-2                - [Internal] query proxyServer address exception£¬from httpUrl=http://confreg.sit.alipay.net:9603?com.alipay.ldc.zone=null&version=4.2.0
